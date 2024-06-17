@@ -30,8 +30,11 @@ const endRows = (N) => {
     const totalN = N - 1;
     for (let i = 0; i <= totalN; i++){
         for (let j = 0; j <= totalN; j++){
-            const minDistance = Math.min(i, j, totalN - i, totalN - j)
-            if(minDistance === 0){
+            // const minDistance = Math.min(i, j, totalN - i, totalN - j)
+            // if(minDistance === 0){
+            //     console.log('*')
+            // }
+            if(i === 0 || j===0 || i === totalN || j === totalN){
                 console.log('*')
             }
         }
@@ -45,8 +48,11 @@ const endRowsWithArray = (N) => {
     const totalN = N - 1;
     for (let i = 0; i <= totalN; i++){
         for (let j = 0; j <= totalN; j++){
-            const minDistance = Math.min(i, j, totalN - i, totalN - j)
-            if(minDistance === 0){
+            // const minDistance = Math.min(i, j, totalN - i, totalN - j)
+            // if(minDistance === 0){
+            //     arr[i][j] = '*'
+            // }
+            if(i === 0 || j===0 || i === totalN || j === totalN){
                 arr[i][j] = '*'
             }
         }
